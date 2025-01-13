@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Staatliches&display=swap');
-/* la partie header */
-/* code à donner à Doina lien non clicable sur ma page  */
+
 * {
     margin: 0;
     padding: 0;
@@ -81,7 +80,7 @@
   }
   
   .sociallinks-header img {
-    width: 50px;
+    width: 30px;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
@@ -89,24 +88,22 @@
     transform: scale(1.2);
     opacity: 0.8;
   }
-.main-content {
-    width: 100%;
-    text-align: center;
+  .main-content {
+      width: 100%;
+      text-align: center;
   }
   
 /* la partie tissus */
-.section-offre {
+  .section-offre {
     padding: 50px 20px;
     background-color: #d6d1ca;
     text-align: center;
   }
   .section-offre h1 {
     font-family: "Staatliches", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #000000;
-    font-weight: 400;
-    font-style: normal;
   }
   .section-offre .description-paragraph1,
   .section-offre .description-paragraph2,
@@ -200,7 +197,6 @@
     padding: 10px 40px;
     border-radius: 50px 50px;
     font-size: 2rem;
-    font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: 2px solid #000000;
   }
@@ -236,7 +232,6 @@
     max-width: 220px;
   }
   .section-tissus {
-    /* padding: 50px 20px; */
     text-align: center;
   }
   
@@ -262,7 +257,6 @@
   .text-part1 {
     margin-bottom: 10px;
   }
-  /* redurir espace entre button et image */
   .instagram-button {
     text-decoration: none;
     background-color: #ffffff;
@@ -270,7 +264,6 @@
     padding: 10px 40px; 
     border-radius: 50px 50px;
     font-size: 2rem;
-    font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: 2px solid #000000;
     line-height: 80px;
@@ -286,6 +279,7 @@
     max-width: 700px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
   }
   .button-contact {
     background-color: #d6d1ca;
@@ -304,7 +298,6 @@
     padding: 10px 40px;
     border-radius: 50px 50px;
     font-size: 2rem;
-    font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: 2px solid #000000;
   }
@@ -394,11 +387,12 @@
     color: #81a969;
   }
   @media (max-width: 768px) {
+
     .nav-links {
       display: none;
     }
     header .logo {
-      order: 1; /* Place le logo à gauche */
+      order: 1; 
       margin-right: auto;
     }
     .sociallinks-header {
@@ -421,7 +415,7 @@
     }
   
     .nav-links {
-      display: none; /* Cacher les liens par défaut */
+      display: none; 
       position: absolute;
       top: 60px;
       left: 0;
@@ -445,7 +439,12 @@
       padding: 15px 0;
       font-size: 1.5rem;
     }
-  
+    .section-offre h1 {
+      font-size: 2.5rem;
+      color: #000000;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
     .section-offre,
     .section-avis-clients,
     .trust-section,
@@ -548,7 +547,9 @@
     footer #back-to-top {
       display: none;
       position: absolute;
+      visibility: hidden;
     }
+
     .footer-left p {
       display: none;
     }
